@@ -1,0 +1,19 @@
+= Api docs
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+== Pricing
+All prices are supposed to have a single system-wide currency, thus no currency code is provided, only a number.
+
+== Products
+<<add-product.adoc#, Add product>>
+
+<<update-product.adoc#, Update product>>
+
+<<get-products.adoc#, Get products>>
+
+== Orders
+
+<<place-order.adoc#, Place order>>
+
+<<retrieve-orders.adoc#, Retrieve orders>>

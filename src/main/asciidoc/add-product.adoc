@@ -1,0 +1,5 @@
+= Add Product
+
+Adds a new product to catalog.
+
+operation::add-product[snippets='request-fields,http-request,http-response']

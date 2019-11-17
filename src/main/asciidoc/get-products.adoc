@@ -1,0 +1,5 @@
+= Get products
+
+Gets all products.
+
+operation::get-products[snippets='http-request,http-response']

@@ -1,0 +1,5 @@
+= Update product
+
+Updates a product.
+
+operation::update-product[snippets='request-fields,http-request,http-response']

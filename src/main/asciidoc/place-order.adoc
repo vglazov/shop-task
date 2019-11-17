@@ -1,0 +1,5 @@
+= Place order
+
+Places a new order.
+
+operation::place-order[snippets='http-request,http-response']

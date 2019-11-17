@@ -1,0 +1,5 @@
+= Retrieve orders
+
+Retrieves orders for a given time period.
+
+operation::retrieve-orders[snippets='request-parameters,http-request,http-response']
