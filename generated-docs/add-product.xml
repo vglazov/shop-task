@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en">
+<info>
+<title>Add Product</title>
+<date>2019-11-16</date>
+</info>
+<preface>
+<title></title>
+<simpara>Adds a new product to catalog.</simpara>
+<chapter xml:id="_request_fields">
+<title>Request fields</title>
+<informaltable frame="all" rowsep="1" colsep="1">
+<tgroup cols="3">
+<colspec colname="col_1" colwidth="33.3333*"/>
+<colspec colname="col_2" colwidth="33.3333*"/>
+<colspec colname="col_3" colwidth="33.3334*"/>
+<thead>
+<row>
+<entry align="left" valign="top">Path</entry>
+<entry align="left" valign="top">Type</entry>
+<entry align="left" valign="top">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry align="left" valign="top"><simpara><literal>name</literal></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>String</literal></simpara></entry>
+<entry align="left" valign="top"><simpara>Product name</simpara></entry>
+</row>
+<row>
+<entry align="left" valign="top"><simpara><literal>price</literal></simpara></entry>
+<entry align="left" valign="top"><simpara><literal>Number</literal></simpara></entry>
+<entry align="left" valign="top"><simpara>Product price</simpara></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</chapter>
+<chapter xml:id="_http_request">
+<title>HTTP request</title>
+<programlisting language="http" linenumbering="unnumbered">POST /products HTTP/1.1
+Content-Type: application/json; charset=UTF-8
+Host: localhost:8080
+Content-Length: 37
+
+{
+  "name" : "test",
+  "price" : 67
+}</programlisting>
+</chapter>
+<chapter xml:id="_http_response">
+<title>HTTP response</title>
+<programlisting language="http" linenumbering="unnumbered">HTTP/1.1 201 Created
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 17 Nov 2019 08:13:10 GMT
+Content-Length: 50
+
+{
+  "id" : 22,
+  "name" : "test",
+  "price" : 67
+}</programlisting>
+</chapter>
+</preface>
+</book>

@@ -10,4 +10,4 @@ Api is exposed to 8080 port.
 
 This is a draft work, only basic methods are implemented. No validations or proper error handling. No logging.
 
-You may find api call samples in generated [documentation](./generated-docs/index.html)
+You may find api call samples in generated [documentation](./generated-docs/index.xml)

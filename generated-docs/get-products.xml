@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?asciidoc-toc?>
+<?asciidoc-numbered?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xml:lang="en">
+<info>
+<title>Get products</title>
+<date>2019-11-16</date>
+</info>
+<preface>
+<title></title>
+<simpara>Gets all products.</simpara>
+<chapter xml:id="_http_request">
+<title>HTTP request</title>
+<programlisting language="http" linenumbering="unnumbered">GET /products HTTP/1.1
+Host: localhost:8080</programlisting>
+</chapter>
+<chapter xml:id="_http_response">
+<title>HTTP response</title>
+<programlisting language="http" linenumbering="unnumbered">HTTP/1.1 200 OK
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sun, 17 Nov 2019 08:13:10 GMT
+Content-Length: 58
+
+[ {
+  "id" : 21,
+  "name" : "Sample",
+  "price" : 9.99
+} ]</programlisting>
+</chapter>
+</preface>
+</book>
